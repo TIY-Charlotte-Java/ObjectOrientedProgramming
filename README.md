@@ -17,7 +17,7 @@ Use inheritance in your inventory project. To do so, create at least five differ
 
 ## Requirements
 
-* Add an Inventory class that tracks all items of type `InventoryItem`. This should be an `ArrayList` of type `InventoryItem`.
+* Add an ArrayList that tracks all items of type `InventoryItem`.
 * Create at least five classes that extend the `InventoryItem` class, each one representing a product category. 
 * Create a static `createItem` method in your main class which returns an object using the correct category class (or throws and error for an invalid category name).
   * `static InventoryItem createItem(String name, int quantity, String category)`
