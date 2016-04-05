@@ -4,6 +4,6 @@ public class Shoes extends InventoryItems {
     public Shoes(String name, int quantity) {
         this.name = name;
         this.quantity = quantity;
-        this.category = "Shoe";
+        this.category = "Shoes";
     }
 }
