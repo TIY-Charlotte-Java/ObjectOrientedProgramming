@@ -12,9 +12,6 @@ public class Main {
         item.list.add(createItem("iPhone7", 1, "Phone"));
         item.list.add(createItem("Folgers", 4, "Coffee"));
         item.list.add(createItem("Addidas", 40, "Shoes"));
-
-
-
     }
 
     public static class Inventory {
@@ -26,26 +23,20 @@ public class Main {
             case "CANDYBAR":
                 System.out.printf("\nThere are %d %s bars in inventory", quantity, name);
                 return new CandyBar(name, quantity, category);
-                //break;
             case "WATCH":
                 System.out.printf("\nThere are %d %s watches in inventory", quantity, name);
                 return new Watch(name, quantity, category);
-               // break;
             case "PHONE":
                 System.out.printf("\nThere are %d %s phones in inventory", quantity, name);
                 return new Phone(name, quantity, category);
-               // break;
             case "ICECREAM":
                 System.out.printf("\nThere are %d %s ice cream flavors in inventory", quantity, name);
                 return new IceCream(name, quantity, category);
-                //break;
             case "COFFEE":
                 System.out.printf("\nThere are %d %s coffee brands in inventory", quantity, name);
                 return new Coffee(name, quantity, category);
-                //break;
             default:
                 throw new Exception("\nError: Not a category");
-                //break;
         }
     }
 }
