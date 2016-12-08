@@ -25,24 +25,24 @@ public class Main {
         switch (category.toUpperCase()) {
             case "CANDYBAR":
                 System.out.printf("\nThere are %d %s bars in inventory", quantity, name);
-                //return new CandyBar(name, quantity, category);
-                return new InventoryItem(name, quantity, category);
+                return new CandyBar(name, quantity, category);
+                //return new InventoryItem(name, quantity, category);
             case "WATCH":
                 System.out.printf("\nThere are %d %s watches in inventory", quantity, name);
-                //return new Watch(name, quantity, category);
-                return new InventoryItem(name, quantity, category);
+                return new Watch(name, quantity, category);
+                //return new InventoryItem(name, quantity, category);
             case "PHONE":
                 System.out.printf("\nThere are %d %s phones in inventory", quantity, name);
-                //return new Phone(name, quantity, category);
-                return new InventoryItem(name, quantity, category);
+                return new Phone(name, quantity, category);
+                //return new InventoryItem(name, quantity, category);
             case "ICECREAM":
                 System.out.printf("\nThere are %d %s ice cream flavors in inventory", quantity, name);
-                //return new IceCream(name, quantity, category);
-                return new InventoryItem(name, quantity, category);
+                return new IceCream(name, quantity, category);
+                //return new InventoryItem(name, quantity, category);
             case "COFFEE":
                 System.out.printf("\nThere are %d %s coffee brands in inventory", quantity, name);
-                //return new Coffee(name, quantity, category);
-                return new InventoryItem(name, quantity, category);
+                return new Coffee(name, quantity, category);
+                //return new InventoryItem(name, quantity, category);
             default:
                 throw new Exception("\nError: Not a category");
         }
