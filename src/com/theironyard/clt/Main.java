@@ -13,11 +13,12 @@ public class Main {
         list.add(createItem("iPhone7", 1, "Phone"));
         list.add(createItem("Folgers", 4, "Coffee"));
         //Showing contents of each object stored in ArrayList
-        System.out.print (list.get(0).toString());
-        System.out.print (list.get(1).toString());
-        System.out.print (list.get(2).toString());
-        System.out.print (list.get(3).toString());
-        System.out.print (list.get(4).toString());
+        System.out.println("");
+        list.get(0).toString();
+        list.get(1).toString();
+        list.get(2).toString();
+        list.get(3).toString();
+        list.get(4).toString();
 
     }
     // Method that sorts into ArrayList based on Category passed
