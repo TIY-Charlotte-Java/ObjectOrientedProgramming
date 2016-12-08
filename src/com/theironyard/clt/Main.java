@@ -1,29 +1,27 @@
 package com.theironyard.clt;
 
+import jdk.nashorn.internal.objects.annotations.Function;
+
 import java.util.ArrayList;
 
 public class Main {
 
     public static void main(String[] args) throws Exception {
         ArrayList<InventoryItem> list = new ArrayList<>();
-        //Inventory item = new Inventory();
+
         list.add(createItem("AppleWatch", 2, "Watch"));
         list.add(createItem("Chocolate", 3, "IceCream"));
         list.add(createItem("Hershey", 5, "CandyBar"));
         list.add(createItem("iPhone7", 1, "Phone"));
         list.add(createItem("Folgers", 4, "Coffee"));
 
-  //      System.out.print("\n" +);
-//        System.out.print("\n" +item.list.get(1));
-//        System.out.print("\n" +item.list.get(2));
-//        System.out.print("\n" +item.list.get(3));
-//        System.out.print("\n" +item.list.get(4));
+        System.out.print (list.get(0).toString());
+        System.out.print (list.get(1).toString());
+        System.out.print (list.get(2).toString());
+        System.out.print (list.get(3).toString());
+        System.out.print (list.get(4).toString());
 
     }
-
-//    public  class Inventory {
-//        ArrayList<InventoryItem> list = new ArrayList<>();
-//    }
 
     static InventoryItem createItem (String name, int quantity, String category) throws Exception {
         switch (category.toUpperCase()) {

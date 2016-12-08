@@ -11,4 +11,10 @@ public class InventoryItem {
         this.category = category;
     }
 
+    @Override
+    public String toString() {
+        System.out.printf("\nThe brand name is %s, The quantity is %d, The category is %s", name, quantity, category);
+        return "";
+    }
+
 }
