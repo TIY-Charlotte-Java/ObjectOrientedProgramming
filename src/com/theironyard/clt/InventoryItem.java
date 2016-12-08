@@ -39,7 +39,7 @@ public class InventoryItem {
     }
 
 
-public static void info(InventoryItem item){
+public  void createItem(InventoryItem item){
     Scanner scanner = new Scanner(System.in);
     System.out.println("what is the name of you item");
     item.setName(scanner.nextLine());

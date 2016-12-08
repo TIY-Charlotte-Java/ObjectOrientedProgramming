@@ -12,7 +12,10 @@ public class Book extends InventoryItem {
         this.category = "Book";
     }
 
+ public void createItem(String name, String quantiry){
 
+
+ }
 
 
 

@@ -11,6 +11,7 @@ public class Main {
 
         ArrayList<InventoryItem> item = new ArrayList<>();
         InventoryItem product = new InventoryItem();
+
         product.setName("em");
         product.setQuantity(2);
         System.out.println(product.getName());
@@ -24,8 +25,7 @@ public class Main {
     public static InventoryItem createItem(String name, int quantity, String category) {
         // create a static method -- createItem
         //returns an object using category class -- if you find the category then return that infromation which is in
-        // there --
-        //throws an error for an invalid category
+        // there -- Book then return name,quantity and category else throws and error
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Which category information would you like - 1. Book, 2. Toy, 3. Dress, 4. Shoes, 5. Pant");
@@ -33,9 +33,24 @@ public class Main {
 
         switch (choice) {
             case 1:
+                //pritn book info
+                break;
+            case 2:
+                //print toy info
+                break;
+            case 3:
+                //print dress info
+                break;
+            case 4:
+                //print shoes info
+                break;
+            case 5:
+                //print pant info
                 break;
 
             default:
+                System.out.println("you have entered an invalid category");
+               // throw Exception;
                 //  System.out.println(createItem("book", 2, "book"));
         }
 
