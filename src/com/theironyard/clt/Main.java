@@ -4,29 +4,23 @@ import java.util.ArrayList;
 
 public class Main {
 
-    static ArrayList<BMovies> dvds = new ArrayList<>();
+    public static ArrayList<BMovieDVDs> dvds = new ArrayList<>();
 
     //Creates item in DVD array indexed by Category
-    static BMovies createItem(String filmName, int qty, String category) throws Error{
+    public static BMovieDVDs createItem(String filmName, int qty, String category) throws Error{
         switch (category) {
-            case "RomZomCom":{
+            case "RomZomCom":
                 return new RomZomCom(filmName, qty);
-            }
-            case "SciFi":{
+            case "SciFi":
                 return new SciFi(filmName, qty);
-            }
-            case "Action": {
+            case "Action":
                 return new Action(filmName, qty);
-            }
-            case "Horror": {
+            case "Horror":
                 return new Horror(filmName, qty);
-            }
-            case "Instructional": {
+            case "Instructional":
                 return new Instructional(filmName, qty);
-            }
-            default: {
+            default:
                 throw new Error("This is an invalid category.");
-            }
         }
     }
     public static void main(String[] args) {
@@ -48,10 +42,5 @@ public class Main {
         for (int i = 0; i < dvds.size(); i++) {
             dvds.get(i).getInfo();
         }
-
-
-
-
-
     }
 }
