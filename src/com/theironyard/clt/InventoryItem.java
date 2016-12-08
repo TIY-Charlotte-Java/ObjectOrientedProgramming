@@ -14,7 +14,13 @@ public class InventoryItem {
     int quantity;
     String category;
 
-    public String getName() {
+    public InventoryItem(String name, int quantity, String category) {
+        this.name = name;
+        this.quantity = quantity;
+        this.category = category;
+    }
+
+    /*public String getName() {
         return name;
     }
 
@@ -37,9 +43,9 @@ public class InventoryItem {
     public void setCategory(String category) {
         this.category = category;
     }
+*/
 
-
-public  void createItem(InventoryItem item){
+/*public  void createItem(InventoryItem item){
     Scanner scanner = new Scanner(System.in);
     System.out.println("what is the name of you item");
     item.setName(scanner.nextLine());
@@ -47,9 +53,9 @@ public  void createItem(InventoryItem item){
     item.setQuantity(scanner.nextInt());
     System.out.println(item.getName());
     System.out.println(item.getQuantity());
-    System.out.println(item.getCategory());
+    System.out.println(item.getCategory());*/
 }
 
 
 
-}
+

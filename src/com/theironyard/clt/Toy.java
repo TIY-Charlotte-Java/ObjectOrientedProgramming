@@ -5,10 +5,7 @@ package com.theironyard.clt;
  */
 public class Toy extends InventoryItem {
 
-    public Toy(String name, int quantity){
-        this.name = name;
-        this.quantity = quantity;
-        this.category = "Book";
+    public Toy(String name, int quantity, String category) {
+        super(name, quantity, category);
     }
-
 }
