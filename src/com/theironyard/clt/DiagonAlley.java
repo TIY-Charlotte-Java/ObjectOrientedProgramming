@@ -8,10 +8,10 @@ public class DiagonAlley {
      int quantity;
      String shopName;
 
-    public DiagonAlley(String item, int quantity, String shopName) {
-        this.item = item;
-        this.quantity = quantity;
-        this.shopName = shopName;
+    @Override
+    public String toString() {
+         System.out.printf("%s - %s \n", item, shopName);
+         return item;
     }
 }
 
