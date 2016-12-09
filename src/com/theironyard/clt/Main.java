@@ -10,46 +10,43 @@ public class Main {
         // write your code here
 
         ArrayList<InventoryItem> item = new ArrayList<>();
-        item.add(createItem("emi", 1, "book"));
-        item.add(createItem("train", 1, "toy"));
+        item.add(createItem("emi", 1, "Book"));
+        item.add(createItem("train", 1, "Toy"));
         item.add(createItem("megan", 1, "Dress"));
         item.add(createItem("Skinny Pants", 1, "Pant"));
         item.add(createItem("high heels", 1, "Shoes"));
 
 
+        for (int i = 0; i < item.size(); i++) {
+            item.get(i).display();
+        }
     }
 
-    public static InventoryItem createItem(String name, int quantity, String category) throws Exception {
-        // create a static method -- createItem
-        //returns an object using category class -- if you find the category then return that infromation which is in
-        // there -- Book then return name,quantity and category else throws and error
-        Scanner scanner = new Scanner(System.in);
 
-        System.out.print("please enter your category -- Book, Toy, Dress ,Shoes ,Pant,\n");
-        category = scanner.nextLine();
+    public static InventoryItem createItem(String name, int quantity, String category) throws Exception {
 
         switch (category) {
             case "Book":
-                System.out.printf("the category is %s, the quantity %d, the name is %s ", name, quantity, category);
-                return new Book(name, quantity, category);
-            //pritn book info
+                return new Book(name, quantity);
             case "Toy":
-                return new Toy(name, quantity, category);
-            //print toy info
+                return new Toy(name, quantity);
             case "Dress":
-                return new Dress(name, quantity, category);
-            //print dress info
+                return new Dress(name, quantity);
             case "Shoes":
-                return new Shoes(name, quantity, category);
+                return new Shoes(name, quantity);
             //print shoes info
             case "Pant":
-                return new Pant(name, quantity, category);
+                return new Pant(name, quantity);
             //print pant info
             default:
-                System.out.println("you have entered an invalid category");
                 throw new Exception("incorrect information");
-                //  System.out.println(createItem("book", 2, "book"));
         }
 
     }
+
 }
+
+
+
+
+

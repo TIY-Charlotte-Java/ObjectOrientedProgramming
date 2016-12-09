@@ -20,42 +20,7 @@ public class InventoryItem {
         this.category = category;
     }
 
-    /*public String getName() {
-        return name;
+    public void display() {
+        System.out.printf("the category is %s, the quantity %d, the name is %s\n", name, quantity, category);
     }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
-
-    public String getCategory() {
-        return category;
-    }
-
-    public void setCategory(String category) {
-        this.category = category;
-    }
-*/
-
-/*public  void createItem(InventoryItem item){
-    Scanner scanner = new Scanner(System.in);
-    System.out.println("what is the name of you item");
-    item.setName(scanner.nextLine());
-    System.out.println("How many do you have : ");
-    item.setQuantity(scanner.nextInt());
-    System.out.println(item.getName());
-    System.out.println(item.getQuantity());
-    System.out.println(item.getCategory());*/
 }
-
-
-
-
