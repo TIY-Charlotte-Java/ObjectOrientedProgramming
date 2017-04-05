@@ -1,3 +1,6 @@
+[The Code for Today's TextAdventure](https://github.com/TIY-Charlotte-Java/TextAdventure)
+
+[Fork The Repo](https://github.com/TIY-Charlotte-Java/ObjectOrientedProgramming).
 # Object Oriented Programming
 Let's talk Inheritance.  
 
@@ -13,21 +16,17 @@ Now for your assignment.
 
 The goal of this assignment is to create an Inventory system.
 
-Use inheritance in your inventory project. To do so, create at least five different classes for product categories. Each one should set a different value for the "category" field.
+Use inheritance in this assignment. To do so, create at least five different classes for product categories. Each one should set a different value for the "category" field.
 
 ## Requirements
 
-* Add an ArrayList that tracks all items of type `InventoryItem`.
+* Add an ArrayList that tracks all items of type `InventoryItem`, called "inventory."
 * Create at least five classes that extend the `InventoryItem` class, each one representing a product category. 
-* Create a static `createItem` method in your main class which returns an object using the correct category class (or throws and error for an invalid category name).
-  * `static InventoryItem createItem(String name, int quantity, String category)`
 * Each category class should have a constructor that sets the "category" field to the appropriate name.
-* Add one instance per class using the aforementioned `createItem` method
-* When you list the items, list their category as well.
-* List each Inventory Item in the Array List
+* Add one instance of each class to the "inventory" ArrayList
+* List each Inventory Item in the `inventory` Array List.
   * For each item, display the category
 * Use `String.format` or `System.out.printf` anywhere you are manually concatenating strings with `+`.
-
 
 
 ## Example
